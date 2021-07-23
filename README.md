@@ -1,4 +1,4 @@
-# lookbook-zanartu02
+# lookbook-delrio
 
 ## Build Setup
 

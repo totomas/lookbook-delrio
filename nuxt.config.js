@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "lookbook-zanartu02",
+        title: "lookbook-delrio",
         htmlAttrs: {
             lang: "en"
         },
