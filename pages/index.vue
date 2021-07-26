@@ -43,7 +43,7 @@
         <div class="section-02" id="section-02">
           <img src="~/assets/img/02-2.png" alt="" />
           <p class="title">Un edificio que</p>
-          <p class="subtitle">marca tendecia</p>
+          <p class="subtitle">marca tendencia</p>
           <p class="downgrade">Arquitectura integrada a la ciudad.</p>
         </div>
       </div>
@@ -163,7 +163,7 @@
           <p class="title">¿Un cafecito?</p>
           <p class="subtitle">
             El corazón de <br />
-            providencia <br />
+            Providencia <br />
             está lleno de ellos.
           </p>
         </div>
@@ -304,7 +304,7 @@ export default {
       var tl = new TimelineMax({ onUpdate: updatePercentage });
       tl.to("#bricsa-square", 96, { top: "90%" }, 0);
       tl.to("#section-bg01", 2, { "background-position-x": "-630px" }, 0);
-      tl.to("#section1_citylover", 3, { top: "8%" }, 0);
+      tl.to("#section1_citylover", 3, { bottom: "100%" }, 0);
       tl.to("#section01", 2, { top: "-100%" }, 3);
       tl.to("#section-02", 2, { top: "-100%" }, 6);
       tl.to("#section02", 2, { top: "-100%" }, 7);
@@ -312,7 +312,7 @@ export default {
       tl.to("#section-03_02", 2, { top: "30%" }, 12);
       tl.to("#section-03_02-img", 2, { left: "0" }, 12);
       tl.to("#section-03_02", 2, { opacity: "0" }, 15);
-      tl.to("#section-03_02-img", 2, { left: "-70%" }, 15);
+      tl.to("#section-03_02-img", 2, { left: "-90%" }, 15);
       tl.to("#section03", 2, { top: "-100%" }, 17);
       tl.to("#section04_img", 7, { "object-position": "100%" }, 19);
       tl.to("#section04", 2, { top: "-100%" }, 27);
@@ -327,9 +327,9 @@ export default {
       tl.to("#section10_bg", 3, { "object-position": "100%" }, 51);
       tl.to("#section10-content", 2, { opacity: "1", filter: "blur(0)" }, 52);
       tl.to("#section10", 2, { top: "-100%" }, 54);
-      tl.to("#section11_bg", 4, { left: "-145%" }, 56);
+      tl.to("#section11_bg", 4, { right: "0%" }, 56);
       tl.to("#section11", 2, { top: "-100%" }, 60);
-      tl.to("#section12_bg", 4, { left: "-50%" }, 62);
+      tl.to("#section12_bg", 4, { right: "0" }, 62);
       tl.to("#section12_content", 2, { opacity: "1", filter: "blur(0)" }, 63);
       tl.to("#section12", 2, { top: "-100%" }, 66);
       tl.to("#section13_bg", 2, { left: "-60%" }, 68);
@@ -629,8 +629,9 @@ body {
   margin: 0;
   font-weight: bolder;
   color: #e40524;
-  top: 180%;
+  bottom: -180%;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .section02-container {
@@ -720,6 +721,9 @@ body {
   justify-content: center;
 }
 .section03-container .section-03 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   color: #fff;
   width: 80%;
@@ -751,6 +755,7 @@ body {
   color: #fff;
   font-weight: 800;
   text-align: center;
+  line-height: 1;
 }
 
 .section03-container .section-03 .section-03_02 .subtitle {
@@ -765,7 +770,7 @@ body {
   height: 80%;
   width: 70%;
   top: 10%;
-  left: -70%;
+  left: -90%;
   object-fit: cover;
   object-position: 90% 0;
   filter: brightness(0.7);
@@ -1029,17 +1034,17 @@ body {
   justify-items: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 10%;
   color: #fff;
   opacity: 0;
   filter: blur(20px);
 }
 .section10-container .section-10 img {
   filter: brightness(0.8);
-  width: 80%;
+  width: 100%;
   height: 300px;
   object-fit: cover;
   grid-column: 1/2;
@@ -1071,7 +1076,8 @@ body {
 }
 .section11-container .section-bg {
   filter: brightness(0.7);
-  left: 0;
+  right: -100%;
+  left: auto;
 }
 .section11-container .section-11 {
   color: #fff;
@@ -1107,7 +1113,8 @@ body {
   text-align: left;
 }
 .section12-container .section-bg {
-  left: 0%;
+  right: -30%;
+  left: auto;
   object-position: 100%;
   filter: brightness(0.7);
 }
@@ -1397,24 +1404,63 @@ body {
   }
   .section01-container .section-01 #section1_citylover {
     font-size: 150px;
-    right: -160px;
+    right: -290px;
   }
   .section02-container .section-02 .title {
+    font-size: 40px;
+  }
+  .section02-container .section-02 .subtitle {
     font-size: 50px;
   }
-  .section03-container .section-03 .title {
-    font-size: 40px;
+  .section02-container .section-02 .downgrade {
+    font-size: 27px;
   }
   .section03-container .section-03 .subtitle {
     font-size: 25px;
     bottom: 15%;
   }
+  .section03-container .section-03 .section-03_02 .title02{
+    font-size: 50px;
+  }
   .section03-container .section-03 .subtitle02 {
     font-size: 25px;
     bottom: 15%;
   }
-  .section08-container .section-08 .subtitle02 {
-    top: 18%;
+  .section05-container .section-05 .title{
+    font-size: 50px;
+  }
+  .section06-container .section-06 .title{
+    font-size: 40px;
+  }
+  .section06-container .section-06 .subtitle{
+    font-size: 60px;
+  }
+  .section07-container .section-07 .title{
+    font-size: 200px;
+  }
+  .section07-container .section-07 .subtitle{
+    font-size: 50px;
+  }
+  .section08-container .section-08 .title{
+    font-size: 50px;
+  }
+  .section08-container .section-08 .subtitle {
+    font-size: 24px;
+  }
+  .section09-container .section-09 .subtitle{
+    font-size: 26px;
+  }
+  .section10-container .section-10 .title{
+    font-size: 50px;
+  }
+  .section11-container .section-11 .title{
+    font-size: 40px;
+  }
+  .section11-container .section-11 .subtitle{
+    font-size: 50px;
+  }
+  .section11-container .section-11 .downgrade{
+    font-size: 16px;
   }
   .section13-container .section-13 .title {
     font-size: 38px;
@@ -1424,18 +1470,27 @@ body {
   .section01-container .section-01 .call {
     font-size: 40px;
   }
-  .section01-container .section-01 #section1_citylover {
-    font-size: 150px;
-    right: -160px;
+
+  .section02-container .section-02 .downgrade {
+    font-size: 23px;
   }
-  .section02-container .section-02 .subtitle {
-    font-size: 30px;
+  .section05-container .section-05 .title{
+    font-size: 46px;
   }
   .section05-container .section-05 .subtitle {
     top: 21%;
   }
+  .section06-container .section-06 .subtitle{
+    font-size: 50px;
+  }
   .section07-container .section-07 .subtitle {
-    font-size: 80px;
+    font-size: 40px;
+  }
+  .section10-container .section-10 .title{
+    font-size: 46px;
+  }
+  .section11-container .section-11 .title{
+    font-size: 36px;
   }
   .section12-container .section-12 .subtitle {
     font-size: 50px;
