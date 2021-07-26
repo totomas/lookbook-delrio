@@ -188,28 +188,92 @@
         </div>
       </div>
       <div class="section section10-container" id="section10">
-        <img
-          class="section-bg"
-          id="section10_bg"
-          src="~/assets/img/05.jpg"
-        />
+        <img class="section-bg" id="section10_bg" src="~/assets/img/05.jpg" />
         <div class="section-10" id="section10-content">
           <img src="~/assets/img/11.jpg" />
           <p class="title">La ciudad también se merece un descanso</p>
         </div>
       </div>
       <div class="section section11-container" id="section11">
-        <div class="section-11" id="section11-content"></div>
+        <img class="section-bg" id="section11_bg" src="~/assets/img/15.jpg" />
+        <div class="section-11" id="section11-content">
+          <p class="title">Un City lover pone ojo en...</p>
+          <p class="subtitle">los detalles</p>
+          <p class="downgrade">Terminaciones de 1er nivel.</p>
+        </div>
       </div>
       <div class="section section12-container" id="section12">
-        <div class="section-12"></div>
+        <img class="section-bg" id="section12_bg" src="~/assets/img/04.jpg" />
+        <div class="section-12" id="section12_content">
+          <p class="title">Nada como</p>
+          <p class="subtitle">una buena ducha</p>
+          <p class="downgrade">Cómodo baño principal con shower door.</p>
+        </div>
       </div>
       <div class="section section13-container" id="section13">
-        <div id="section13" class="section-13"></div>
+        <img class="section-bg" id="section13_bg" src="~/assets/img/08.jpg" />
+        <img id="section13_img" src="~/assets/img/10.jpg" />
+        <div id="section13_content" class="section-13">
+          <p class="title">Lleva la entretención a los más alto</p>
+          <p class="subtitle">Departamentos con terraza privada en rooftop.</p>
+        </div>
       </div>
-      <div class="section section14-container" id="section14"></div>
-      <div class="section section15-container">
+      <div class="section section14-container" id="section14">
+        <img class="section-bg" id="section14_bg" src="~/assets/img/13.jpg" />
+        <img id="section14_img" src="~/assets/img/03.jpg" />
+        <p class="title" id="section14_title">Áreas comunes</p>
+        <div id="section14_content" class="section-14">
+          <p class="subtitle">Un City lover</p>
+          <p class="downgrade">sabe pasarlo bien</p>
+        </div>
+      </div>
+      <div class="section section15-container" id="section15">
+        <video
+          muted
+          playsinline
+          autoplay
+          loop
+          preload="auto"
+          class="section-bg"
+          id="section15_video"
+        >
+          <source src="~/assets/img/video07.mp4" type="video/mp4" />
+        </video>
+        <div class="section15_img01"></div>
+        <div class="section15_img02"></div>
         <div class="section-15">
+          <img src="~/assets/img/07.jpg" />
+          <p class="title">Cuando la temperatura sube:</p>
+          <p class="subtitle" id="section15_subtitle">
+            ¡baja y refréscate!
+          </p>
+          <p class="downgrade" id="section15_downgrade">
+            Piscina, Quincho y Salón Gourmet.
+          </p>
+        </div>
+      </div>
+      <div class="section section16-container" id="section16">
+        <video
+          muted
+          playsinline
+          autoplay
+          loop
+          preload="auto"
+          class="section-bg"
+          id="section16_video"
+        >
+          <source src="~/assets/img/video08.mp4" type="video/mp4" />
+        </video>
+        <div class="section-16">
+          <p class="title">¿eres?</p>
+          <p class="subtitle">
+            #Citylover
+          </p>
+          <img lazyload src="~/assets/img/logo-comuna.png" />
+        </div>
+      </div>
+      <div class="section section17-container" id="section17">
+        <div class="section-17">
           <img lazyload class="logo" src="~/assets/img/bricsa.png" />
 
           <img lazyload class="bptl" src="~/assets/img/bptl.png" />
@@ -238,7 +302,7 @@ export default {
   methods: {
     startAnimations: function() {
       var tl = new TimelineMax({ onUpdate: updatePercentage });
-      tl.to("#bricsa-square", 45, { top: "90%" }, 0);
+      tl.to("#bricsa-square", 96, { top: "90%" }, 0);
       tl.to("#section-bg01", 2, { "background-position-x": "-630px" }, 0);
       tl.to("#section1_citylover", 3, { top: "8%" }, 0);
       tl.to("#section01", 2, { top: "-100%" }, 3);
@@ -263,6 +327,21 @@ export default {
       tl.to("#section10_bg", 3, { "object-position": "100%" }, 51);
       tl.to("#section10-content", 2, { opacity: "1", filter: "blur(0)" }, 52);
       tl.to("#section10", 2, { top: "-100%" }, 54);
+      tl.to("#section11_bg", 4, { left: "-145%" }, 56);
+      tl.to("#section11", 2, { top: "-100%" }, 60);
+      tl.to("#section12_bg", 4, { left: "-50%" }, 62);
+      tl.to("#section12_content", 2, { opacity: "1", filter: "blur(0)" }, 63);
+      tl.to("#section12", 2, { top: "-100%" }, 66);
+      tl.to("#section13_bg", 2, { left: "-60%" }, 68);
+      tl.to("#section13_img", 2, { top: "0" }, 69);
+      tl.to("#section13_content", 2, { opacity: "1", filter: "blur(0)" }, 69);
+      tl.to("#section13", 2, { top: "-100%" }, 72);
+      tl.to("#section14_title", 4, { left: "-250%" }, 75);
+      tl.to("#section14", 2, { top: "-100%" }, 80);
+      tl.to("#section15_subtitle", 2, { bottom: "40%" }, 83);
+      tl.to("#section15_downgrade", 2, { bottom: "30%" }, 85);
+      tl.to("#section15", 2, { top: "-100%" }, 88);
+      tl.to("#section16", 2, { top: "-100%" }, 91);
 
       const scene = this.$scrollmagic
         .scene({
@@ -357,56 +436,64 @@ body {
 #section12,
 #section13,
 #section14,
-#section15 {
+#section15,
+#section16,
+#section17 {
   top: 0%;
   position: absolute !important;
   transition-timing-function: ease;
   transition-duration: 100ms;
 }
 #section01 {
-  z-index: 15;
+  z-index: 19;
 }
 #section02 {
-  z-index: 14;
+  z-index: 18;
 }
 #section03 {
-  z-index: 13;
+  z-index: 17;
 }
 #section04 {
-  z-index: 12;
+  z-index: 16;
 }
 #section05 {
-  z-index: 11;
+  z-index: 15;
 }
 #section06 {
-  z-index: 10;
+  z-index: 14;
 }
 #section07 {
-  z-index: 9;
+  z-index: 13;
 }
 #section08 {
-  z-index: 8;
+  z-index: 12;
 }
 #section09 {
-  z-index: 7;
+  z-index: 11;
 }
 #section10 {
-  z-index: 6;
+  z-index: 10;
 }
 #section11 {
-  z-index: 5;
+  z-index: 9;
 }
 #section12 {
-  z-index: 4;
+  z-index: 8;
 }
 #section13 {
-  z-index: 3;
+  z-index: 7;
 }
 #section14 {
-  z-index: 2;
+  z-index: 6;
 }
 #section15 {
-  z-index: 1;
+  z-index: 5;
+}
+#section16 {
+  z-index: 4;
+}
+#section17 {
+  z-index: 3;
 }
 .loading {
   transition: all 1s both;
@@ -927,13 +1014,13 @@ body {
   z-index: 1;
 }
 .section10-container .section-bg {
-      position: absolute;
-    height: 100vh;
-    width: 100%;
-    filter: brightness(0.7);
-    left: 0;
-    object-fit: cover;
-    object-position: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  filter: brightness(0.7);
+  left: 0;
+  object-fit: cover;
+  object-position: 0;
 }
 .section10-container .section-10 {
   position: absolute;
@@ -952,11 +1039,11 @@ body {
 }
 .section10-container .section-10 img {
   filter: brightness(0.8);
-    width: 80%;
-    height: 300px;
-    object-fit: cover;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 .section10-container .section-10 .title {
   color: #fff;
@@ -984,222 +1071,307 @@ body {
 }
 .section11-container .section-bg {
   filter: brightness(0.7);
+  left: 0;
 }
 .section11-container .section-11 {
   color: #fff;
-}
-.section11-container .section-11 .section-11__img01,
-.section11-container .section-11 .section-11__img02 {
-  filter: brightness(0.7);
+  display: grid;
+  padding: 30px;
   position: absolute;
-  top: 0;
+  width: 100%;
+  bottom: 8%;
   left: 0;
-  object-fit: cover;
-  width: 75%;
-  height: 90%;
-}
-.section11-container .section-11 .section-11__img01 {
-  z-index: 1;
-  left: 0;
-}
-.section11-container .section-11 .section-11__img02 {
-  object-position: 10%;
 }
 .section11-container .section-11 .title {
   z-index: 2;
-  position: absolute;
   width: 80%;
-  left: 10%;
+  justify-self: flex-start;
   text-align: left;
-  bottom: 0%;
   font-size: 50px;
-  font-weight: 300;
-  opacity: 0;
+  font-weight: 400;
 }
 .section11-container .section-11 .subtitle {
   z-index: 2;
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: -15%;
-  font-size: 70px;
+  width: 70%;
+  justify-self: flex-end;
+  font-size: 64px;
   font-weight: 800;
-  text-align: right;
-  opacity: 0;
+  text-align: left;
+  line-height: 1;
 }
 .section11-container .section-11 .downgrade {
   z-index: 2;
-  position: absolute;
-  bottom: 0%;
-  font-size: 30px;
-  width: 80%;
-  left: 10%;
-  text-align: center;
-  opacity: 0;
+  font-size: 20px;
+  width: 70%;
+  justify-self: flex-end;
+  text-align: left;
 }
 .section12-container .section-bg {
-  left: -20%;
+  left: 0%;
   object-position: 100%;
   filter: brightness(0.7);
 }
 .section12-container .section-12 {
-  color: #fff;
-}
-.section12-container #section12-content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 10px;
+  padding: 20px;
+  background: #fff;
+  width: 60%;
+  height: min-content;
+  color: #444;
   z-index: 2;
   position: absolute;
-  width: 80%;
-  left: 10%;
-  top: -10%;
+  left: 0;
+  bottom: 5%;
   opacity: 0;
+  filter: blur(20px);
 }
 .section12-container .section-12 .title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   line-height: 0.9;
 }
 .section12-container .section-12 .subtitle {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
+  line-height: 0.9;
 }
 .section12-container .section-12 .downgrade {
-  font-size: 30px;
-  width: 100%;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
 }
 .section13-container .section-bg {
   position: absolute;
   height: 100%;
   filter: brightness(0.7);
-  left: -100%;
+  left: 0;
 }
 .section13-container .section-13 {
   color: #fff;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(2, min-content);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  opacity: 0;
+  filter: blur(20px);
 }
-.section13-container .section-13 .entorno {
-  height: 150px;
+.section13-container #section13_img {
   position: absolute;
-  top: 1%;
-  left: 80%;
+  top: -40%;
+  left: 15%;
+  width: 70%;
+  height: 250px;
+  object-fit: cover;
+  filter: brightness(0.7);
 }
 .section13-container .section-13 .title {
   z-index: 2;
-  position: absolute;
   width: 80%;
-  left: 10%;
-  bottom: 66%;
-  font-size: 40px;
-  font-weight: 300;
-}
-.section13-container .section-13 .subtitle {
-  z-index: 2;
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  bottom: 53%;
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 0.9;
-}
-.section13-container .section-13 .downgrade {
-  z-index: 2;
-  position: absolute;
-  bottom: 39%;
-  font-size: 22px;
-  width: 80%;
-  left: 10%;
-  font-weight: 300;
-  filter: blur(100px);
-  opacity: 0;
-}
-.section13-container .section-13 .fachada {
-  position: absolute;
-  bottom: 3%;
-  left: 10%;
-  width: 80%;
-  height: 30%;
-  object-fit: cover;
-  object-position: bottom;
-}
-.section14-container .section-bg {
-  filter: brightness(1);
-}
-.section14-container .section-14 {
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 90%;
-  left: 0;
-  opacity: 0;
-}
-.section14-container .section-14 .section-14__img01 {
-  z-index: 2;
-  filter: brightness(0.7);
-  width: 60%;
-  height: 30%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  right: 10%;
-}
-.section14-container .section-14 .section-14__img02 {
-  filter: brightness(0.7);
-  position: absolute;
-  width: 70%;
-  height: 80%;
-  object-fit: cover;
-  left: 15%;
-  top: 10%;
-}
-.section14-container .section-14 .section-14__img03 {
-  z-index: 2;
-  width: 60%;
-  height: 30%;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
-.section14-container .section-14 .title {
-  z-index: 2;
-  position: absolute;
-  width: 80%;
-  left: 20%;
-  text-align: left;
-  top: 28%;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 800;
   line-height: 1;
 }
-.section14-container .section-14 .subtitle {
+.section13-container .section-13 .subtitle {
+  z-index: 2;
+  width: 80%;
+  font-size: 29px;
+  font-weight: 300;
+  line-height: 0.9;
+}
+.section14-container {
+  background: #fff;
+}
+.section14-container .section-bg {
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.section14-container .section-14 {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.section14-container #section14_img {
+  width: 60%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: center;
+}
+.section14-container .title {
   z-index: 2;
   position: absolute;
   width: 80%;
-  left: 20%;
-  top: 55%;
-  font-size: 20px;
-  text-align: left;
+  left: 0;
+  top: 10px;
+  font-size: 210px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  color: #e40524;
+}
+.section14-container .section-14 .subtitle {
+  z-index: 2;
+  width: 80%;
+  font-size: 60px;
+  text-align: center;
   font-weight: 300;
 }
-.section14-container .enter {
-  top: 0;
-  opacity: 1;
+.section14-container .section-14 .downgrade {
+  z-index: 2;
+  width: 80%;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1;
 }
 .section15-container .section-bg {
   height: 100vh;
 }
-.section15-container img {
-  width: 40%;
+.section15-container .section-15 {
+  color: #fff;
   position: absolute;
-  left: 30%;
-  bottom: 20%;
+  row-gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
 }
-.section16-container {
+.section15-container .section-15 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: right;
+  filter: brightness(0.7);
+}
+
+.section15-container .section15_img01 {
+  background-image: url("~/assets/img/03.jpg");
+  background-size: 200%;
+  background-position: bottom right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 2;
+  height: 150px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.section15-container .section15_img02 {
+  background-image: url("~/assets/img/09.jpg");
+  background-size: 200%;
+  background-position: bottom right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  z-index: 2;
+  height: 150px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.section15-container .title {
+  z-index: 2;
+  width: 80%;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  align-self: flex-start;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.section15-container .section-15 .subtitle {
+  z-index: 2;
+  width: 80%;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+  position: absolute;
+  bottom: -50%;
+  left: 10%;
+}
+.section15-container .section-15 .downgrade {
+  z-index: 2;
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  bottom: -50%;
+  left: 10%;
+}
+.section16-container .section-bg {
+  left: 0;
+  width: 100%;
+  filter: brightness(0.7);
+}
+.section16-container .section-16 {
+  color: #fff;
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content 30%;
+  row-gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-content: flex-end;
+  align-items: center;
+}
+.section16-container .section-16 .title {
+  color: #fff;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 0.9;
+}
+.section16-container .section-16 .subtitle {
+  color: #fff;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1;
+}
+.section16-container .section-16 img {
+  width: 50%;
+  align-self: flex-end;
+}
+.section17-container {
   background: #e40524;
   display: flex;
 }
-.section16-container .section-16 {
+.section17-container .section-17 {
   display: grid;
   height: 100%;
   grid-template-columns: 100%;
@@ -1211,10 +1383,10 @@ body {
   align-content: center;
   align-self: center;
 }
-.section16-container .section-16 .logo {
+.section17-container .section-17 .logo {
   width: 60%;
 }
-.section16-container .section-16 .bptl {
+.section17-container .section-17 .bptl {
   width: 40%;
 }
 
