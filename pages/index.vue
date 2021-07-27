@@ -336,7 +336,7 @@ export default {
       tl.to("#section13_img", 2, { top: "0" }, 69);
       tl.to("#section13_content", 2, { opacity: "1", filter: "blur(0)" }, 69);
       tl.to("#section13", 2, { top: "-100%" }, 72);
-      tl.to("#section14_title", 4, { left: "-250%" }, 75);
+      tl.to("#section14_title", 4, { left: "-290%" }, 75);
       tl.to("#section14", 2, { top: "-100%" }, 80);
       tl.to("#section15_subtitle", 2, { bottom: "40%" }, 83);
       tl.to("#section15_downgrade", 2, { bottom: "30%" }, 85);
@@ -1419,51 +1419,78 @@ body {
     font-size: 25px;
     bottom: 15%;
   }
-  .section03-container .section-03 .section-03_02 .title02{
+  .section03-container .section-03 .section-03_02 .title02 {
     font-size: 50px;
   }
   .section03-container .section-03 .subtitle02 {
     font-size: 25px;
     bottom: 15%;
   }
-  .section05-container .section-05 .title{
+  .section05-container .section-05 .title {
     font-size: 50px;
   }
-  .section06-container .section-06 .title{
+  .section06-container .section-06 .title {
     font-size: 40px;
   }
-  .section06-container .section-06 .subtitle{
+  .section06-container .section-06 .subtitle {
     font-size: 60px;
   }
-  .section07-container .section-07 .title{
+  .section07-container .section-07 .title {
     font-size: 200px;
   }
-  .section07-container .section-07 .subtitle{
+  .section07-container .section-07 .subtitle {
     font-size: 50px;
   }
-  .section08-container .section-08 .title{
+  .section07-container .section-07 .downgrade {
+    font-size: 22px;
+  }
+  .section08-container .section-08 .title {
     font-size: 50px;
   }
   .section08-container .section-08 .subtitle {
     font-size: 24px;
   }
-  .section09-container .section-09 .subtitle{
+  .section09-container .section-09 .subtitle {
     font-size: 26px;
   }
-  .section10-container .section-10 .title{
+  .section10-container .section-10 .title {
     font-size: 50px;
   }
-  .section11-container .section-11 .title{
+  .section11-container .section-11 .title {
     font-size: 40px;
   }
-  .section11-container .section-11 .subtitle{
+  .section11-container .section-11 .subtitle {
     font-size: 50px;
   }
-  .section11-container .section-11 .downgrade{
+  .section11-container .section-11 .downgrade {
     font-size: 16px;
+  }
+  .section12-container .section-12 .title {
+    font-size: 32px;
+  }
+  .section12-container .section-12 .downgrade {
+    font-size: 14px;
   }
   .section13-container .section-13 .title {
     font-size: 38px;
+  }
+  .section13-container .section-13 .subtitle {
+    font-size: 26px;
+  }
+  .section14-container .section-14 .subtitle {
+    font-size: 49px;
+  }
+  .section14-container .section-14 .downgrade {
+    font-size: 60px;
+  }
+  .section15-container .title {
+    font-size: 30px;
+  }
+  .section15-container .section-15 .subtitle {
+    font-size: 44px;
+  }
+  .section15-container .section-15 .downgrade {
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 321px) {
@@ -1474,37 +1501,45 @@ body {
   .section02-container .section-02 .downgrade {
     font-size: 23px;
   }
-  .section05-container .section-05 .title{
+  .section05-container .section-05 .title {
     font-size: 46px;
   }
   .section05-container .section-05 .subtitle {
     top: 21%;
   }
-  .section06-container .section-06 .subtitle{
+  .section06-container .section-06 .subtitle {
     font-size: 50px;
   }
   .section07-container .section-07 .subtitle {
     font-size: 40px;
   }
-  .section10-container .section-10 .title{
+  .section10-container .section-10 .title {
     font-size: 46px;
   }
-  .section11-container .section-11 .title{
+  .section11-container .section-11 .title {
     font-size: 36px;
   }
   .section12-container .section-12 .subtitle {
     font-size: 50px;
   }
+
   .section13-container .section-13 .title {
     font-size: 32px;
     bottom: 63%;
   }
-  .section13-container .section-13 .subtitle {
-    font-size: 33px;
-    bottom: 55%;
-  }
+
   .section13-container .section-13 .downgrade {
     font-size: 20px;
+  }
+
+  .section15-container .title {
+    font-size: 26px;
+  }
+  .section15-container .section-15 .subtitle {
+    font-size: 40px;
+  }
+  .section15-container .section-15 .downgrade {
+    font-size: 24px;
   }
 }
 </style>
