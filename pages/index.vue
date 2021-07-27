@@ -33,7 +33,7 @@
             City Lovers
           </p>
           <p class="downgrade">
-            Vive conectado a la energía urbana de Santiango
+            Vive conectado a la energía urbana de Santiago
           </p>
           <p id="section1_citylover" class="uptext">City Lovers</p>
         </div>
