@@ -1397,6 +1397,18 @@ body {
   width: 40%;
 }
 
+@media screen and (max-height:735px) {
+  .section15-container .title {
+    font-size: 30px;
+  }
+  .section15-container .section-15 .subtitle {
+    font-size: 44px;
+  }
+  .section15-container .section-15 .downgrade {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 376px) {
   .section01-container .section-01 .call {
     font-size: 50px;
@@ -1542,4 +1554,6 @@ body {
     font-size: 24px;
   }
 }
+
+
 </style>
