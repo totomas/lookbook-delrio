@@ -17,7 +17,7 @@ export default {
     css: [],
 
     router: {
-        base: process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/zanartu/"
+        base: process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/delrio/"
     },
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
