@@ -601,7 +601,7 @@ body {
   text-align: left;
   width: 70%;
   color: #fff;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: bolder;
   line-height: 0.8;
   position: absolute;
@@ -1093,7 +1093,7 @@ body {
   width: 80%;
   justify-self: flex-start;
   text-align: left;
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 400;
 }
 .section11-container .section-11 .subtitle {
@@ -1411,7 +1411,7 @@ body {
 
 @media screen and (max-width: 376px) {
   .section01-container .section-01 .call {
-    font-size: 50px;
+    font-size: 44px;
     bottom: 40%;
   }
   .section01-container .section-01 #section1_citylover {
@@ -1469,7 +1469,7 @@ body {
     font-size: 50px;
   }
   .section11-container .section-11 .title {
-    font-size: 40px;
+    font-size: 34px;
   }
   .section11-container .section-11 .subtitle {
     font-size: 50px;
@@ -1529,7 +1529,7 @@ body {
     font-size: 46px;
   }
   .section11-container .section-11 .title {
-    font-size: 36px;
+    font-size: 32px;
   }
   .section12-container .section-12 .subtitle {
     font-size: 50px;
