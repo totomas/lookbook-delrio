@@ -14,7 +14,7 @@
         />
       </div>
       <div class="instructions" v-show="isCover">
-        <p>Para navegar por el lookbook solo debes hacer scroll.</p>
+        <p>Disfruta una navegación única, deslizando hacia abajo</p>
         <img src="~/assets/img/scroll.png" />
         <button class="instructions_btn" @click="isCover = !isCover">
           Empezar a navegar
@@ -532,18 +532,18 @@ body {
 }
 .instructions {
   background: #e40524;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: min-content 80px min-content;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 30px;
   z-index: 20;
 }
 .instructions p {
@@ -555,15 +555,14 @@ body {
 }
 .instructions img {
   width: 10%;
-  animation: arrow-down 1s both infinite alternate-reverse;
-  position: absolute;
+  animation: arrow-down .5s both infinite alternate-reverse;
 }
 @keyframes arrow-down {
   0% {
-    bottom: 5%;
+        margin-top: 0;
   }
   100% {
-    bottom: 3%;
+        margin-top: 10px;
   }
 }
 .instructions .instructions_btn {
