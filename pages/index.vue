@@ -84,21 +84,25 @@
       </div>
       <div class="section section05-container" id="section05">
         <div class="section-05">
-          <video
-            muted
-            playsinline
-            autoplay
-            loop
-            preload="auto"
-            class="section-bg"
-            id="section05_video"
-          >
-            <source src="~/assets/img/video02.mp4" type="video/mp4" />
-          </video>
-          <img src="~/assets/img/12.jpg" id="section05_img" />
-          <div id="section05_text">
-            <p class="title">¿Hagamos un picnic?</p>
-            <p class="subtitle">Rodeado de plazas y áreas verdes</p>
+          <div class="section05_video">
+            <video
+              muted
+              playsinline
+              autoplay
+              loop
+              preload="auto"
+              class="section-bg"
+              id="section05_video"
+            >
+              <source src="~/assets/img/video02.mp4" type="video/mp4" />
+            </video>
+            <p id="section05_video-text" class="title">¿Hagamos un picnic?</p>
+          </div>
+          <div class="section05_img">
+            <img src="~/assets/img/12.jpg" id="section05_img" />
+            <p id="section05_img-text" class="subtitle">
+              Rodeado de plazas y áreas verdes
+            </p>
           </div>
         </div>
       </div>
@@ -316,11 +320,12 @@ export default {
       tl.to("#section03", 2, { top: "-100%" }, 17);
       tl.to("#section04_img", 7, { "object-position": "100%" }, 19);
       tl.to("#section04", 2, { top: "-100%" }, 27);
-      tl.to("#section05_text", 2, { top: "62%" }, 30);
+      tl.to("#section05_video-text", 2, { bottom: "10%" }, 30);
+      tl.to("#section05_img-text", 2, { bottom: "30%" }, 30);
       tl.to("#section05", 2, { top: "-100%" }, 33);
       tl.to("#section06_text", 2, { top: "0" }, 35);
       tl.to("#section06", 2, { top: "-100%" }, 38);
-      tl.to("#section07_downgrade", 2, { bottom: "5%" }, 40);
+      tl.to("#section07_downgrade", 2, { bottom: "10%" }, 40);
       tl.to("#section07", 2, { top: "-100%" }, 42);
       tl.to("#section08", 2, { top: "-100%" }, 45);
       tl.to("#section09", 2, { top: "-100%" }, 48);
@@ -336,7 +341,7 @@ export default {
       tl.to("#section13_img", 2, { top: "0" }, 69);
       tl.to("#section13_content", 2, { opacity: "1", filter: "blur(0)" }, 69);
       tl.to("#section13", 2, { top: "-100%" }, 72);
-      tl.to("#section14_title", 4, { left: "-290%" }, 75);
+      tl.to("#section14_title", 4, { left: "-220%" }, 75);
       tl.to("#section14", 2, { top: "-100%" }, 80);
       tl.to("#section15_subtitle", 2, { bottom: "40%" }, 83);
       tl.to("#section15_downgrade", 2, { bottom: "30%" }, 85);
@@ -611,9 +616,9 @@ body {
 }
 .section01-container .section-01 .downgrade {
   text-align: left;
-  width: 70%;
+  width: 56%;
   color: #fff;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 300;
   line-height: 1;
   position: absolute;
@@ -679,7 +684,7 @@ body {
   color: #fff;
   width: 100%;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   top: 30%;
   line-height: 1;
@@ -746,12 +751,13 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
+  row-gap: 20px;
   grid-template-rows: repeat(2, min-content);
   z-index: 2;
 }
 
 .section03-container .section-03 .section-03_02 .title02 {
-  font-size: 60px;
+  font-size: 56px;
   color: #fff;
   font-weight: 800;
   text-align: center;
@@ -759,7 +765,7 @@ body {
 }
 
 .section03-container .section-03 .section-03_02 .subtitle {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
   text-align: center;
   color: #fff;
@@ -807,7 +813,45 @@ body {
   left: 0;
   z-index: 1;
 }
-
+.section05-container .section-05 .section05_video {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+.section05-container .section-05 #section05_video {
+  height: 100%;
+}
+.section05-container .section-05 #section05_video-text {
+  position: absolute;
+  bottom: -50%;
+  left: 5%;
+  color: #fff;
+  width: 90%;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+  line-height: 0.9;
+}
+.section05-container .section-05 #section05_img-text {
+  position: absolute;
+  bottom: -50%;
+  width: 80%;
+  left: 10%;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1;
+}
+.section05-container .section-05 .section05_img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 .section05-container .section-05 #section05_text {
   position: absolute;
   top: 100%;
@@ -820,30 +864,10 @@ body {
   justify-items: center;
   align-items: center;
 }
-.section05-container .section-05 .title {
-  color: #fff;
-  width: 90%;
-  font-size: 60px;
-  text-align: center;
-  font-weight: 800;
-  line-height: 0.9;
-}
-.section05-container .section-05 .subtitle {
-  color: #fff;
-  font-size: 40px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1;
-}
-.section05-container .section-05 img {
-  filter: brightness(0.7);
+.section05-container .section-05 .section05_img img {
   width: 100%;
-  height: 30%;
   object-fit: cover;
   object-position: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   filter: brightness(0.6);
 }
 .section06-container .section-bg {
@@ -964,7 +988,7 @@ body {
 .section08-container .section-08 .title {
   color: #fff;
   width: 90%;
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   font-weight: 800;
   line-height: 1.1;
@@ -973,7 +997,7 @@ body {
 .section08-container .section-08 .subtitle {
   color: #fff;
   width: 80%;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 300;
   text-align: center;
   line-height: 1.2;
@@ -1085,7 +1109,7 @@ body {
   padding: 30px;
   position: absolute;
   width: 100%;
-  bottom: 8%;
+  bottom: 20%;
   left: 0;
 }
 .section11-container .section-11 .title {
@@ -1163,6 +1187,7 @@ body {
   align-items: center;
   align-content: center;
   justify-items: center;
+  row-gap: 10px;
   opacity: 0;
   filter: blur(20px);
 }
@@ -1178,7 +1203,7 @@ body {
 .section13-container .section-13 .title {
   z-index: 2;
   width: 80%;
-  font-size: 55px;
+      font-size: 38px;
   font-weight: 800;
   line-height: 1;
 }
@@ -1225,8 +1250,8 @@ body {
   position: absolute;
   width: 80%;
   left: 0;
-  top: 10px;
-  font-size: 210px;
+  top: -9%;
+  font-size:170px;
   font-weight: 800;
   line-height: 1;
   white-space: nowrap;
@@ -1242,7 +1267,7 @@ body {
 .section14-container .section-14 .downgrade {
   z-index: 2;
   width: 80%;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   font-weight: 800;
   line-height: 1;
@@ -1397,7 +1422,7 @@ body {
   width: 40%;
 }
 
-@media screen and (max-height:735px) {
+@media screen and (max-height: 735px) {
   .section15-container .title {
     font-size: 30px;
   }
@@ -1409,14 +1434,14 @@ body {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 378px) {
   .section01-container .section-01 .call {
     font-size: 44px;
     bottom: 40%;
   }
   .section01-container .section-01 #section1_citylover {
-    font-size: 150px;
-    right: -290px;
+    font-size: 130px;
+    right: -270px;
   }
   .section02-container .section-02 .title {
     font-size: 40px;
@@ -1446,15 +1471,6 @@ body {
   }
   .section06-container .section-06 .subtitle {
     font-size: 60px;
-  }
-  .section07-container .section-07 .title {
-    font-size: 200px;
-  }
-  .section07-container .section-07 .subtitle {
-    font-size: 50px;
-  }
-  .section07-container .section-07 .downgrade {
-    font-size: 22px;
   }
   .section08-container .section-08 .title {
     font-size: 50px;
@@ -1554,6 +1570,4 @@ body {
     font-size: 24px;
   }
 }
-
-
 </style>
