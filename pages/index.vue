@@ -1259,14 +1259,14 @@ body {
 }
 .section14-container .section-14 .subtitle {
   z-index: 2;
-  width: 80%;
+  width: 90%;
   font-size: 60px;
   text-align: center;
   font-weight: 300;
 }
 .section14-container .section-14 .downgrade {
   z-index: 2;
-  width: 80%;
+  width: 90%;
   font-size: 60px;
   text-align: center;
   font-weight: 800;
