@@ -1249,7 +1249,7 @@ body {
   position: absolute;
   width: 80%;
   left: 0;
-  top: -9%;
+  top: -5%;
   font-size:170px;
   font-weight: 800;
   line-height: 1;
