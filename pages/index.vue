@@ -29,12 +29,14 @@
             class="section-logo"
             src="~/assets/img/logo-comuna.png"
           />
-          <p class="call">
-            City Lovers
-          </p>
-          <p class="downgrade">
-            Vive conectado a la energía urbana de Santiago
-          </p>
+          <div id="section-01__text">
+            <p class="call">
+              City Lovers
+            </p>
+            <p class="downgrade">
+              Vive conectado a la energía urbana de Santiago
+            </p>
+          </div>
           <p id="section1_citylover" class="uptext">City Lovers</p>
         </div>
       </div>
@@ -257,6 +259,7 @@
         </div>
       </div>
       <div class="section section16-container" id="section16">
+        
         <video
           muted
           playsinline
@@ -555,14 +558,14 @@ body {
 }
 .instructions img {
   width: 10%;
-  animation: arrow-down .5s both infinite alternate-reverse;
+  animation: arrow-down 0.5s both infinite alternate-reverse;
 }
 @keyframes arrow-down {
   0% {
-        margin-top: 0;
+    margin-top: 0;
   }
   100% {
-        margin-top: 10px;
+    margin-top: 10px;
   }
 }
 .instructions .instructions_btn {
@@ -603,27 +606,18 @@ body {
 .section01-container .section-01 .call {
   transition: all 400ms;
   text-align: left;
-  width: 70%;
+
   color: #fff;
   font-size: 54px;
   font-weight: bolder;
   line-height: 0.8;
-  position: absolute;
-  top: 28%;
-  left: 20px;
-  z-index: 2;
 }
 .section01-container .section-01 .downgrade {
   text-align: left;
-  width: 56%;
   color: #fff;
   font-size: 29px;
   font-weight: 300;
   line-height: 1;
-  position: absolute;
-  top: 37%;
-  left: 20px;
-  z-index: 2;
 }
 .section01-container .section-01 #section1_citylover {
   transform: rotate(-90deg) scale(2.2);
@@ -637,7 +631,15 @@ body {
   z-index: 1;
   white-space: nowrap;
 }
-
+.section01-container .section-01 #section-01__text {
+  width: 70%;
+  display: grid;
+  row-gap: 20px;
+  position: absolute;
+  top: 28%;
+  left: 20px;
+  z-index: 2;
+}
 .section02-container {
   position: relative;
 }
@@ -1203,7 +1205,7 @@ body {
 .section13-container .section-13 .title {
   z-index: 2;
   width: 80%;
-      font-size: 38px;
+  font-size: 38px;
   font-weight: 800;
   line-height: 1;
 }
@@ -1251,7 +1253,7 @@ body {
   width: 80%;
   left: 0;
   top: -5%;
-  font-size:170px;
+  font-size: 170px;
   font-weight: 800;
   line-height: 1;
   white-space: nowrap;
