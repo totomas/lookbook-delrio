@@ -865,6 +865,7 @@ body {
 }
 .section05-container .section-05 .section05_img img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   filter: brightness(0.6);
