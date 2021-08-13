@@ -220,7 +220,7 @@
         <img class="section-bg" id="section13_bg" src="~/assets/img/08.jpg" />
         <img id="section13_img" src="~/assets/img/10.jpg" />
         <div id="section13_content" class="section-13">
-          <p class="title">Lleva la entretención a los más alto</p>
+          <p class="title">Lleva la entretención a lo más alto</p>
           <p class="subtitle">Departamentos con terraza privada en rooftop.</p>
         </div>
       </div>
